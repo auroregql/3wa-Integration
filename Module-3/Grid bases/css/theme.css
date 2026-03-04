@@ -1,0 +1,68 @@
+
+/* *****************************************************************
+ SECTION
+***************************************************************** */
+
+h2,
+h3 {
+	margin: 0;
+}
+section header,
+section footer {
+	padding: 1em;
+}
+
+/* *****************************************************************
+ GRID
+***************************************************************** */
+.grid {
+    display: grid;
+    /* Exemple :
+    grid-template-rows: 20px 25% 8rem 2fr 1fr;
+    grid-template-columns: 2rem 100px 12% 1fr 2fr;
+    */
+    grid-template-rows: auto;
+    /*grid-template-columns: 20% 20% 20% 20% 20%;*/
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem; /* Espacement entre lignes et colonnes */
+}
+
+.bloc-header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 6;
+	background-color: #ddd;
+}
+
+.bloc-footer {
+    grid-row: 4 / 5;
+    grid-column: 1 / 6;
+	background-color: #bbb;
+}
+
+.bloc-article-1 {
+    grid-row: 2 / 4;
+    grid-column: 1 / 4;
+	background-color: #fff;
+}
+
+.bloc-article-2 {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+	background-color: #fc3;
+}
+
+.bloc-article-3 {
+    gird-row: 2 / 3;
+    grid-column: 5 / 6;
+	background-color: #fa3;
+}
+
+.bloc-article-4 {
+    grid-row: 3 / 4;
+    grid-column: 4 /6;
+	background-color: #f83;
+}
+
+
