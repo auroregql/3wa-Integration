@@ -1,0 +1,41 @@
+div,
+header, 
+main,
+footer,
+article,
+section,
+aside,
+nav,
+p,
+h2{
+    margin: 15px;
+}
+
+.container {
+    border: 4px solid black;
+    background-color: white;
+}
+
+header,
+main,
+footer{
+    background-color: #dff7ff;
+    border: 3px solid blue;
+}
+
+nav,
+aside,
+section{
+    background-color: lightgray;
+    border: 3px solid darkgray;
+}
+
+article{
+    background-color: lightyellow;
+    border: 3px solid coral;
+}
+
+.licence {
+    text-align: center;
+}
+

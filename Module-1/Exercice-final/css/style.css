@@ -1,0 +1,113 @@
+/*Généralités*/
+
+body {
+    width:980px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+h1, h2, h3 {
+    font-family:Courgette;
+    text-align:center;
+}
+
+h1, h3 {
+    color:#003884 ;
+}
+
+h1{
+   font-size:40px;
+   text-transform:uppercase;
+}
+
+h2 {
+    color:#4f89b9;
+    font-size:35px;
+}
+
+h3{
+  font-size:25px;  
+}
+
+p, li{
+    font-family:"Source Sans 3";
+    text-align:justify;
+    line-height:1.5;
+    font-size:18px;
+    color:#444;
+}
+
+strong {
+    color:#003884;
+}
+
+cite {
+    color:#4f89b9;
+}
+
+section, article {
+    clear:both;
+}
+
+footer {
+    border-top:3px solid #003884;
+}
+
+/*Classes balises*/
+.menu, a{
+    font-family:Courgette;
+    font-weight:bold;
+    text-align:left;
+    font-size:20px;
+    color:#003884;
+    text-decoration:none;
+}
+.citation {
+    font-family:Courgette;
+    background-color:#d7e1ef;
+    text-align:center;
+    color:#003884;
+    font-size:25px;
+}
+
+.auteur {
+    font-size:18px;
+    font-family:Courgette;
+    color:#003884;
+    text-align:center;
+}
+
+/*Images + float*/
+
+.img-right {
+    float:right;
+    margin-left:1em;
+}
+
+.img-left {
+    float:left;
+    margin-right:1em;
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:1em;
+  margin-top:1em;
+}
+
+/*Spécificités footer*/
+
+.pictos {
+    font-size:30px;
+    text-align:center;
+}
+
+.copy {
+    font-size:14px;
+    text-align:center;
+    font-family:"Source Sans 3";
+    font-weight:normal;
+}
+

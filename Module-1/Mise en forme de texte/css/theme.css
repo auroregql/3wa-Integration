@@ -1,0 +1,37 @@
+
+/* text transform */
+.text-transform-none {
+    text-transform: none;
+}
+.text-transform-capitalize {
+    text-transform: capitalize;
+}
+.text-transform-uppercase {
+    text-transform: uppercase;
+}
+.text-transform-lowercase {
+    text-transform: lowercase;
+}
+
+/* text-decoration */
+.text-decoration-underline {
+    text-decoration: underline;
+}
+.text-decoration-none {
+    text-decoration: none;
+}
+.text-decoration-overline {
+    text-decoration: overline;
+}
+.text-decoration-color {
+    text-decoration: underline red;
+}
+.text-decoration-double {
+    text-decoration: underline double orangered;
+}
+.text-decoration-dashed {
+    text-decoration: underline dashed green;
+}
+.text-decoration-wavy {
+    text-decoration: underline wavy teal;
+}
