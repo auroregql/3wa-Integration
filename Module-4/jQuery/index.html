@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Utilisation de jQuery">
+	<title>jQuery</title>
+    <link rel="stylesheet" href="css/common-v3.css" type="text/css" />
+    <link rel="stylesheet" href="css/theme.css" type="text/css" />
+</head>
+<body>
+    <header class="header">
+		<h1>jQuery</h1>
+		<p>Utilisation de jQuery</p>
+    </header>
+    
+    <main class="container main-content">
+
+		<div class="toolbar">
+			<button class="button" id="b1">Css</button>
+			<button class="button" id="b2">Html</button>
+			<button class="button" id="b3">Toggle</button>
+			<button class="button" id="b4">Slide</button>
+		</div>
+
+		<article class="card" id="content">
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur autem eveniet eius corrupti, consequuntur, mollitia aut doloremque eos libero nulla laborum, quidem blanditiis esse repellat molestiae quod similique aliquam dolores.</p>
+			<p>Fugit quod pariatur placeat, sequi repellat, eos impedit autem debitis molestiae harum vel animi amet similique laborum asperiores ullam ad porro labore! Cumque soluta asperiores harum dolor minus, facere sunt?</p>
+		</article>
+
+    </main>
+    
+    <footer class="footer">
+		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+		<p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
+    </footer>
+    
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script>
+    	$(function() {
+    		/* Changer la couleur du texte */
+    		$("#b1").click(function () {
+    			$("#content").css('color', 'blue');
+    		});
+    		
+    		/* Changer le contenu par "<em>Hello World!</em>" */
+    		$("#b2").click(function () {
+    			$("#content").html("<em>Hello World!</em>");
+    		})
+    		
+    		/* On peut faire des animations */
+    		$("#b3").click(function () {
+    			$("#content").toggle();
+    		})
+    		
+    		/* Une autre animation */
+    		$('#b4').click(function() {
+    			$("#content").slideToggle(2000);/* 2000 => 2 secondes */
+    		})
+    		
+    	});
+    </script>
+</body>
+</html>
