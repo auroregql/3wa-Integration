@@ -1,0 +1,28 @@
+h2 {
+	margin: 0;
+}
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Le menu accessible */
+.nav-access {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-access a {
+    position: absolute;
+    display: block;
+    padding: 1em;
+	white-space: nowrap;
+    background-color: black;
+    color: white;
+    opacity: 0;
+}
+
+.nav-access a:focus {
+    opacity: 1;
+}

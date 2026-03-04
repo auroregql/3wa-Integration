@@ -1,0 +1,73 @@
+@import "variables";
+@import "base";
+
+
+/**************************
+        HEADER             
+**************************/
+
+.main-header {
+    background-color:$primary-color;
+    color:$secondary-text-color;
+    display:flex;
+    flex-direction:column;
+    
+    h1 {
+     text-align:left;
+     padding-left:1em;
+     margin-top:1em;
+    }
+    
+    .main-nav {
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 1em;
+          list-style: none;
+          
+          a {
+              text-decoration:none;
+              color:$secondary-text-color;
+          }
+          
+          li {
+              padding:1em;
+          }
+          
+          li:hover {
+            background-color: $secondary-color;
+            padding:1em;
+          }
+        }
+    }    
+}
+
+
+/**************************
+        MAIN             
+**************************/
+@mixin bordered {
+    border:2px solid lightblue;
+    border-radius:10px;
+    margin-bottom:1em;
+    padding:1em;
+}
+
+.container {
+    width:60%;
+    margin:auto;
+
+    .project-card {
+        @include bordered;
+    }
+
+}
+
+/**************************
+        FOOTER             
+**************************/
+
+.main-footer {
+    text-align:center;
+}

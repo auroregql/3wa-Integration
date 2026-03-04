@@ -1,0 +1,32 @@
+$primary-color: blue;
+$title-1-color: red;
+
+$title-2-color: green;
+$title-3-color: purple;
+
+// Utilisation des variables
+
+main {
+    color: $primary-color;
+}
+
+main h1 {
+    color: $title-1-color;
+}
+
+// Imbrication
+
+.imbrication {
+    h2 {
+        color: $title-2-color;
+    }
+    
+    section {
+        padding: 1em;
+        border: 1px solid $primary-color;
+        
+        h3 {
+            color: $title-3-color;
+        }
+    }
+}

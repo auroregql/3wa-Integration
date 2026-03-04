@@ -1,0 +1,63 @@
+/* Généralités */
+
+article + article {
+	margin-top: 2em;
+}
+h2 {
+	margin: 0;
+}
+code {
+	padding: 0 0.5em;
+	color: #fff;
+	background-color: #333;
+}
+
+
+/* Ordre dans la source */
+/* Le code CSS déclaré en dernier est prioritaire sur celui d'avant */
+
+article .inner {
+    color: purple;
+}
+
+.outer p {
+    color: green;
+}
+
+
+/* Spécificité */
+/* La précision du sélecteur prime sur l'ordre de déclaration dans la source */
+
+
+.alice .bob {
+    color: orangered;
+}
+
+.alice p {
+    color: blue;
+}
+
+p.bob {
+    color: green;
+}
+
+.bob {
+    color: yellow;
+}
+
+.alice {
+    color: violet;
+}
+
+/* Importance */
+/* A utiliser en dernier recours si l'ordre dans la source et la précision du
+   sélection ne permettent pas d'appliquer le CSS voulu
+ */
+
+.base .important {
+    color: green;
+}
+
+.important {
+    color: red !important;
+}

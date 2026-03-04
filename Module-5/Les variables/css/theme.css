@@ -1,0 +1,29 @@
+
+/* *****************************************************************
+ DECLARATION DES VARIABLES
+***************************************************************** */
+
+:root {
+    --main-color: purple;
+    --main-font: Arial;
+}
+
+
+/* *****************************************************************
+ MAIN
+***************************************************************** */
+
+.demo {
+    font-family: var(--main-font);
+}
+
+.demo h2 {
+    color: var(--main-color);
+}
+
+.btn {
+    color: var(--main-color);
+    background-color: #fff;
+    border: 1px solid var(--main-color);
+    padding: 1em;
+}
