@@ -1,0 +1,17 @@
+
+.card {
+    width: 50%;
+    display: inline-block;
+}
+
+/* Hack CSS pour mettre les éléments cote à cote */
+.hack-css {
+    font-size: 0;
+}
+.card {
+    font-size: initial;
+}
+
+.valign {
+    vertical-align: top;
+}

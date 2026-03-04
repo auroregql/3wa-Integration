@@ -1,0 +1,90 @@
+/* Le code CSS de l'exercice dirigé */
+.field {
+    display: flex;
+    padding: 1em 0;
+}
+
+.field label {
+    width: 30%;
+}
+.field input {
+    width: 70%;
+}
+
+.field + .field {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+fieldset {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+}
+
+fieldset + fieldset {
+    margin-top: 1em;
+}
+
+legend {
+    padding: 0.5em;
+}
+
+input,
+select,
+textarea {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+}
+
+select,
+textarea {
+    width: 100%;
+}
+
+textarea {
+    min-height: 10em;
+    margin-top: 1em;
+}
+
+.submit-button {
+    background-color: #DD5735;
+    color: white;
+    border-radius: 0.5em;
+    border: 2px solid #DD5735;
+    padding: 1em 2em;
+    font-size: 1.6rem;
+}
+
+.submit-button:hover {
+    background-color: white;
+    color: #DD5735;
+}
+
+textarea {
+    min-height: 10em;
+    margin-top: 1em;
+}
+
+.toolbar {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    padding: 1em 2em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.submit-button {
+    background-color: #DD5735;
+    color: white;
+    border-radius: 0.5em;
+    border: 2px solid #DD5735;
+    padding: 1em 2em;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: white;
+    color: #DD5735;
+}

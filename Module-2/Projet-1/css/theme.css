@@ -1,0 +1,166 @@
+
+
+/*tableau*/
+
+table {
+    justify-content:center;
+    border-collapse:collapse;
+    width:900px;
+}
+
+table, th, td {
+    padding: 1em;
+    border:1px solid #ddd;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+.a-propos {
+    height:450px;
+    background-image: url("../img/fond.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    display: flex;                       /* on active flex pour centrer verticalement */
+    align-items: center;                 /* centre verticalement le contenu */
+    justify-content: flex-start; 
+}
+
+footer {
+    background-color:#007eb3;
+    text-align:center;
+    padding:1em;
+    color:white;
+}
+
+/*SPECIFICITE*/
+
+/*articles*/
+
+.derniers-voyages {
+    border-bottom:2px lightgray solid;
+}
+
+/*boites de texte*/
+
+.description {
+    padding-bottom:1em;
+}
+
+.description-2 {
+    width:450px;
+    background-color:white;
+    padding:1em;
+    margin-left:190px;
+}
+
+/*infos contact*/
+
+.contact {
+    display:flex;
+    flex-direction:column;
+    font-style:italic;
+}
+
+/*formulaire*/
+
+form {
+    background-color:black;
+    background-image:url("../img/map-image.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:900px;
+    padding:1em;
+    
+}
+
+.form {
+    display:flex;
+}
+.infos {
+    display:flex;
+    flex-direction:column;
+}
+
+input, textarea {
+    width:400px;
+    padding:1em;
+    margin:1em;
+    color:gray;
+    background-color:white;
+    border:1px gray solid;
+    border-radius: 10px;
+}
+
+.btn-2 {
+    background-color:#007eb3;
+    border-radius:6px;
+    color:white;
+    border:#007eb3 1px solid;
+    cursor:pointer;
+    padding:1em;
+    display:block;
+    margin:auto;
+}
+
+/*boutons*/
+
+.btn-1 {
+    background-color:#007eb3;
+    border-radius:6px;
+    color:white;
+    border:#007eb3 1px solid;
+    cursor:pointer;
+    padding:0.5em;
+}
+
+/*images*/
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:1em;
+    margin-top:1em;
+}
+
+.vienne {
+    float:left;
+    padding-right:1em;
+    padding-bottom:1em;
+    width:49%;
+}
+
+.marrakech {
+    float:right;
+    padding-left:1em;
+    padding-bottom:1em;
+    width:49%;
+}
+
+/*texte*/
+
+.rouge {
+    color:#f00;
+}
+
+.ocre {
+    color:#CD8C56;
+}
+
+/*liens*/
+
+.link-foot {
+    color:white;
+    text-decoration:underline;
+}
+
+.coordonnees {
+    color:#007eb3;
+}
+
+
+

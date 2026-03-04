@@ -1,0 +1,22 @@
+
+.float-left > article {
+    width: 50%;
+    float: left;
+}
+
+/* Méthode 1 : pour que les éléments soient à l'intérieur du container parent */
+.overflow {
+    overflow: hidden;
+}
+
+/* Méthode 2 : pour que les éléments soient à l'intérieur du container parent */
+.clear {
+    clear: both;
+}
+
+/* Méthode 3 : pour que les éléments soient à l'intérieur du container parent */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}

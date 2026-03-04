@@ -1,0 +1,147 @@
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+/* *************************
+flex-direction
+************************* */
+
+.container-flex-default {
+    display: flex;
+    /* par defaut: flex-direction: row */
+}
+
+.container-flex-direction-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container-flex-direction-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-flex-direction-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* *************************
+flex-wrap
+************************* */
+
+.container-flex-nowrap {
+    display: flex;
+    width: 300px;
+    /* default flex-wrap: nowrap */
+}
+
+.container-flex-wrap {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+}
+
+/* *************************
+align-items
+************************* */
+[class*="container-flex-align-items-"] > li:nth-child(odd) {
+    line-height: 4em;
+}
+
+.container-flex-align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.container-flex-align-items-start {
+    display: flex;
+    align-items: flex-start;
+}
+
+.container-flex-align-items-end {
+    display: flex;
+    align-items: flex-end;
+}
+
+.container-flex-justify-content-flex-center {
+    display:flex;
+    justify-content: center;
+}
+
+.container-flex-justify-content-flex-start {
+    display:flex;
+    justify-content: flex-start;
+}
+
+.container-flex-justify-content-flex-end {
+    display:flex;
+    justify-content: flex-end;
+}
+
+.container-flex-justify-content-space-between {
+    display:flex;
+    justify-content: space-between;
+}
+
+.container-flex-justify-content-space-around {
+    display:flex;
+    justify-content: space-around;
+}
+
+.container-flex-justify-content-space-evenly {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.container-flex-order {
+    display: flex;
+}
+
+.container-flex-order li:nth-child(1) {
+    order: 4;
+}
+.container-flex-order li:nth-child(2) {
+	order: 2;
+}
+.container-flex-order li:nth-child(3) {
+	order: 6;
+}
+.container-flex-order li:nth-child(4) {
+	order: 1;
+}
+.container-flex-order li:nth-child(5) {
+	order: 3;
+}
+.container-flex-order li:nth-child(6) {
+	order: 5;
+}
+
+
+/* *************************
+grow
+************************* */
+.container-flex-grow {
+    display: flex;
+}
+
+.container-flex-grow li:nth-child(3) {
+    flex-grow: 2;
+}
+
+/* *************************
+shrink
+************************* */
+.container-flex-shrink {
+    display: flex;
+}
+
+.container-flex-shrink > * {
+    flex-shrink: 1;
+    flex-basis: 10em; /* Taille idéale maximale de la boite */
+}
+
+.container-flex-shrink li:nth-child(3) {
+    flex-shrink: 6;/* Si la largeur de l'écran diminue, la largeur de la boite va diminuer 6x plus vite que les autres à 1 */
+}

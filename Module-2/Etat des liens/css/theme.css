@@ -1,0 +1,23 @@
+.btn-link {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 1em;
+}
+
+.btn-link-survol:hover {
+    background-color: red;
+}
+
+.btn-link-visited:visited {
+    background-color: #444;
+    
+}
+
+.btn-link-actif:active {
+    background-color: blue;
+}
+
+.btn-link-focus:focus {
+     background-color: red;
+}
